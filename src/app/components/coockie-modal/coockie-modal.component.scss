@@ -1,0 +1,53 @@
+.cookie {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 99;
+    background-color: #000000;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #9c2e2e;
+    font-size: 24px;
+    text-decoration: none;
+    border: dashed rgb(255, 255, 255);
+    transition: ease-in-out 0.5s;
+  }
+  
+.cookie:hover {
+    background-color: #ffffff;
+    border: dashed black;
+    /* Add a dark-grey background on hover */
+}
+
+.text-red{
+  color: #951818;
+}
+.bg-red{
+  background-color:#951818;
+}
+.bg-g-tx-b{
+  background-color:#0c6823;
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+  width: 70px;
+}
+.bg-g-tx-b:hover{
+  color: #ffffff;
+  background-color:#084818;
+}
+
+.bg-r-tx-b{
+  background-color:#b80e0e;
+  color: #000000;
+  transition: 0.5s;
+  width: 70px;
+}
+
+.bg-r-tx-b:hover{
+  color: #ffffff;
+  background-color:#880a0a;
+  }
+  

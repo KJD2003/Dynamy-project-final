@@ -1,0 +1,51 @@
+<section>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card mb-4">
+          <div class="card-header px-4 py-5">
+            <h5 class="text-muted mb-0">Storico Ordini</h5>
+          </div>
+          <div class="card-body">
+            <div *ngFor="let item of orders">
+              <div class="row mb-3">
+                <div class="col-6">
+                  <p class="fw-bold mb-0">Data e ora Ordine: {{ item.data | date: 'dd/MM/yyyy HH:mm' }}</p>
+                </div>
+                <div class="col-6">
+                  <p class="fw-bold mb-0">Totale Ordine: {{ item.totale | number:'1.2-2' }}€</p>
+                </div>
+              </div>
+              <!-- funzione angular che ricava tutti i prodotti dal checkout, iterando ogni prodotto presente -->
+              <div *ngFor="let item of item.prodotti">
+                <div class="row mb-2">
+                  <div class="col-sm-2">
+                    <img [src]="item.image1" class="img-fluid" alt="{{ item.name }}">
+                  </div>
+                  <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                    <p class="text-muted mb-0">{{ item.name }}</p>
+                  </div>
+                  <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                    <p class="text-muted mb-0 small">{{ item.description.slice(0, 50) }}...</p>
+                  </div>
+                  <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                    <a [routerLink]="['/', 'categoria', item.category]">
+                      <p class="text-muted mb-0 small">{{ item.category }}</p>
+                    </a>
+                  </div>
+                  <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                    <p class="text-black mb-0 small">{{ item.quantity }}</p>
+                  </div>
+                  <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                    <p class="text-black mb-0 small">{{ item.price * item.quantity | number:'1.2-2' }}€</p>
+                  </div>
+                </div>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

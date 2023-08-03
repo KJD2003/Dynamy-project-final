@@ -1,0 +1,65 @@
+<!-- componente login -->
+<div class="container py-5 ">
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-xl-10">
+      <div class="card rounded-3 text-black">
+        <div class="row g-0">
+          <div class="col-lg-6">
+            <div class="card-body p-md-5 mx-md-4">
+              <div class="text-center">
+                <img src="../../../assets/images/toro-PhotoRoom-PhotoRoom.png" style="width: 100px;" alt="logo">
+                <h4 class="mt-1 mb-5 pb-1">Bentornato su Dynami!</h4>
+              </div>
+              <form method="get" action="index.html" name="dati_utenti">
+                <p>Per favore, esegui il log-in</p>
+                <div class="form-outline mb-4">
+                  <input type="email" id="form2Example11" class="form-control" placeholder="Inserisci nome utente..." />
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="password" id="form2Example22" class="form-control" placeholder="Inserisci password..." />
+                </div>
+                <div class="d-flex justify-content-around align-items-center mb-4">
+                  <!-- Checkbox -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                    <label class="form-check-label" for="form1Example3">Remember me</label>
+                  </div>
+                  <a class="text-muted" href="../pages/recupero_psw/codice_recupero.html">Password dimenticata?</a>
+                </div>
+                <!-- Submit button -->
+                <div class="row justify-content-md-center">
+                  <!-- al click del bottone "Login" esegue la funzione "onClick" -->
+                  <button type="button" class="btn btn-outline-danger btn-lg btn-block" (click)="onClick()">Login</button>
+                </div>
+                <div class="divider d-flex align-items-center my-4">
+                </div>
+                <div class="d-flex align-items-center justify-content-center pb-4">
+                  <p class="mb-0 me-2">Non hai un account?</p>
+                  <!-- al click di "Crea account" esegue la funzione "goToRegister", che manda nella pagina register -->
+                  <a class=" btn btn-outline-danger"  (click)="goToRegister('register')">Crea account</a>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+            <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+              <h3 class="mb-4">Scopri la tua potenza con Dynami </h3>
+              <div class="small mb-0">Cari atleti e appassionati dello sport,
+                Siete pronti a raggiungere nuovi livelli di prestazioni e vivere la vostra passione per il fitness al
+                massimo?
+                Allora è tempo di scoprire Dynami,
+                il sito sportivo che offre tutto ciò di cui avete bisogno per ottenere il massimo dal vostro
+                allenamento!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<app-br-personalised></app-br-personalised>

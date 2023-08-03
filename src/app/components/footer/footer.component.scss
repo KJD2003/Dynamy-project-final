@@ -1,0 +1,29 @@
+@import "../../../scss/variables";
+.color-facebook{
+    background-color: $facebook;
+    
+}
+.color-facebook:hover{
+background-color: rgb(51, 77, 132);
+
+}
+.color-twitter{
+    background-color: $twitter;
+}
+.color-twitter:hover{
+    background-color: rgb(13, 143, 195);
+}
+
+.color-instagram{
+    background-color: $instagram;
+}
+.color-instagram:hover{
+    background-color: rgb(144, 30, 152)
+}
+
+.color-youtube{
+    background-color: $youtube;
+}
+.color-youtube:hover{
+    background-color: rgb(199, 0, 0);
+}

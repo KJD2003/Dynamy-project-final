@@ -1,0 +1,24 @@
+@import "../../../scss/variables";
+
+.btn-red{
+background-color: #6f1414;
+color: rgb(222, 222, 222);
+}
+.form-control{
+    width: 50px;
+}
+
+.btn-red-logo{
+    color: #ffffff;
+background-color: #000000;
+transition: 2.0 ease-in;
+}
+
+.btn-red-logo:hover{
+    color: #000000;
+    background-color: #8d2e2e;
+}
+
+p{
+    font-size: 15px;
+}

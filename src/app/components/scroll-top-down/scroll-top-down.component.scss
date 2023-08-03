@@ -1,0 +1,38 @@
+#myBtn {
+    position: fixed;
+    height: 60px; 
+    width: 60px;      
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    background-color: #ffffff;
+    color: #9c2e2e; 
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: ease-in-out 0.5s;
+    animation: fadeInAnimation ease 0.8s;
+    animation-iteration-count: 0.5s;
+    animation-fill-mode: forwards;
+    border: solid rgb(0, 0, 0);
+    }
+
+#myBtn:hover {
+    background-color: #000000;
+    border: solid rgb(255, 255, 255);
+    /* Add a dark-grey background on hover */
+}
+
+
+
+@keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 1;
+      }
+  }

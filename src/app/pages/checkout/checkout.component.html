@@ -1,0 +1,186 @@
+<!-- sezione checkout -->
+<section>
+    <div class="container py-3 px-2">
+
+
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="card mb-4">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-1">
+                                <h5>1</h5>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="">Indirizzo di consegna</h4>
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    Mario
+                                </p>
+                                <p>
+                                    Via Montinari 122
+                                </p>
+
+                                <p>
+                                    Lecce, LE
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <hr>
+                        <div class="row">
+                            <div class="col-1">
+                                <h5>2</h5>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="">Modalità di pagamento</h4>
+                            </div>
+                            <div class="col-8">
+                                <h6>
+                                    Inserisci carta
+                                </h6>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="1234-5678-9123-4567"
+                                            maxlength="16">
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="data" class="form-control" placeholder="Data di scadenza"
+                                            maxlength="4">
+                                    </div>
+                                    <div class="col-2">
+                                        <input type="password" class="form-control" placeholder="CVV" maxlength="3">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-1 col-3">
+                                <h4 class="">Oppure</h4>
+                            </div>
+                            <div class="col-8">
+                                <h4>
+                                    Paga con
+                                </h4>
+                                <div class="row justify-content-between">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <a type="button" class="btn btn-paypal"
+                                                    href="https://www.paypal.com/signin" target="_blank">
+                                                    <fa-icon [icon]="faPaypal"></fa-icon>
+                                                </a>
+                                            </div>
+                                            <div class="col-3">
+                                                <a type="button" class="btn btn-google"
+                                                    href="https://pay.google.com/intl/it_it/about/" target="_blank">
+                                                    <fa-icon [icon]="faGooglePay" class="fa-lg"></fa-icon>
+                                                </a>
+                                            </div>
+                                            <div class="col-3">
+                                                <a type="button" class="btn btn-apple"
+                                                    href="https://www.apple.com/it/apple-pay/" target="_blank">
+                                                    <fa-icon [icon]="faApplePay" class="fa-lg"></fa-icon>
+                                                </a>
+                                            </div>
+                                            <div class="col-3">
+                                                <a type="button" class="btn btn-American-express"
+                                                    href="https://www.americanexpress.com/it-it/account/login?inav=it_utility_login"
+                                                    target="_blank">
+                                                    <fa-icon [icon]="faccAmex"></fa-icon>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="offset-6"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="row">
+
+
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <h5>3</h5>
+                                    </div>
+                                    <div class="col-3">
+                                        <h4 class="">Articoli selezionati</h4>
+                                    </div>
+                                    <div class="col-8">
+                                        <!-- iterazione che permette di iterare qualunque elemento (e sua specifica) dentro in checkout -->
+                                        <div class="row mb-0" *ngFor="let item of Incart">
+                                            <div class="col-sm-2">
+                                                <img [src]="item.image1" class="img-fluid" alt="{{ item.name }}">
+                                            </div>
+                                            <div
+                                                class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                                                <p class="text-muted mb-0">{{ item.name }}</p>
+                                            </div>
+                                            <div
+                                                class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                                                <p class="text-muted mb-0 small">{{ item.description.slice(0,30) }}...
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                                                <a [routerLink]="['/', 'categoria', item.category]">
+                                                    <p class="text-muted mb-0 small ">{{ item.category }}</p>
+                                                </a>
+                                            </div>
+                                            <div
+                                                class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                                                <p class="text-black mb-0 small">{{ item.quantity }}</p>
+                                            </div>
+                                            <div
+                                                class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                                                <p class="text-black mb-0 small">{{ item.price * item.quantity | number:
+                                                    '1.2-2' }}€</p>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-lg-3">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4>Totale provvisorio:</h4>
+                        <!-- legge il totale del prezzo di tutti gli elementi nel carrello, il "toFixed" dice di visualizzarli fino alla seconda cifra dopo la virgola -->
+                        <h3>{{ totaleProvvisorio.toFixed(2) }}€</h3>
+                        <div class="row">
+                            <div class="d-grid gap-2 d-md-block col-8">
+                                <input type="text" class="form-control" placeholder="Ho un coupon...">
+                            </div>
+                            <div class="col-4">
+                                <!-- esegue una serie di funzioni al click di "paga" -->
+                                <a (click)="EseguiFunzioniAlPagamento()" class="btn btn-red">Paga</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>

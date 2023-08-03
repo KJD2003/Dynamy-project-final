@@ -1,0 +1,231 @@
+<section>
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-10">
+          <div class="card rounded-3 text-black">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <div class="card-body p-md-5 mx-md-4">
+  
+                  <div class="text-center">
+                    <img src="../../../assets/images/toro-PhotoRoom-PhotoRoom.png"
+                      style="width: 100px;" alt="logo">
+                    <h4 class="mt-1 mb-5 pb-1">Benvenuto su Dynami!</h4>
+                  </div>
+  
+                  <form  (ngSubmit)="registrati()">
+                    <p>Per continuare, esegui la registrazione!</p>
+                    <div class="row">
+                      <div class="col-6 form-outline mb-4">
+                        <input type="text" class="form-control" id="nome" placeholder="Inserisci nome..." name="name" [(ngModel)]="name" required>
+
+
+                      </div>
+                      <div class="col-6">
+                        <input type="text" class="form-control" id="cognome" placeholder="Inserisci cognome..."[(ngModel)]="surname" name="surname" required>
+
+                      </div>
+                    </div>
+                    <div class="input-group date" id="datePicker">
+                      <input type="date" class="form-control" name="date" min="1930-04-01" max="2010-04-20" value="" required>
+                      <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-calendar"></i>
+                      </span>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="col-5">
+                    <select id="inputState" class="form-control" placeholder="Inserisci indirizzo e n° civico..." required>
+                      <option selected>Inserisci CAP...</option>
+                      <option>00010-00100 (Roma)</option>
+                      <option>01010-01100 (Viterbo)</option>
+                      <option>02010-02100 (Rieti)</option>
+                      <option>04010-04100 (Latina)</option>
+                      <option>05010-05100 (Terni)</option>
+                      <option>06010-06100 (Perugia)</option>
+                      <option>07010-07100 (Sassari, Olbia, Tempio Pausania)</option>
+                      <option>08010-08100 (Nuoro, Tortolì, Lanusei)</option>
+                      <option>09010-09170 (Cagliari, Oristano, Sanluri, Villacidro, Carbonia, Iglesias)</option>
+                      <option>10010-10100 (Torino)</option>
+                      <option>11010-11100 (Aosta)</option>
+                      <option>12010-12100 (Cuneo)</option>
+                      <option>13010-13900 (Vercelli, Biella)</option>
+                      <option>14010-14100 (Asti)</option>
+                      <option>15010-15120 (Alessandria)</option>
+                      <option>16010-16100 (Genova)</option>
+                      <option>17010-17100 (Savona)</option>
+                      <option>18010-18100 (Imperia)</option>
+                      <option>19010-19100 (La Spezia)</option>
+                      <option>20010-20900 (Milano, Monza)</option>
+                      <option>21010-21100 (Varese)</option>
+                      <option>22010-22100 (Como)</option>
+                      <option>23010-23900 (Sondrio, Lecco)</option>
+                      <option>24010-24100 (Bergamo)</option>
+                      <option>25010-25100 (Brescia)</option>
+                      <option>26010-26900 (Cremona, Lodi)</option>
+                      <option>27010-27100 (Pavia)</option>
+                      <option>28010-28920 (Novara, Verbania)</option>
+                      <option>29010-29120 (Piacenza)</option>
+                      <option>30010-30100 (Venezia)</option>
+                      <option>31010-31100 (Treviso)</option>
+                      <option>32010-32100 (Belluno)</option>
+                      <option>33010-33170 (Udine, Pordenone)</option>
+                      <option>34010-34170 (Gorizia, Trieste)</option>
+                      <option>35010-35100 (Padova)</option>
+                      <option>36010-36100 (Vicenza)</option>
+                      <option>37010-37100 (Verona)</option>
+                      <option>38010-38120 (Trento)</option>
+                      <option>39010-39100 (Bolzano)</option>
+                      <option>40010-40100 (Bologna)</option>
+                      <option>41011-41120 (Modena)</option>
+                      <option>42010-42120 (Reggio Emilia)</option>
+                      <option>43010-43120 (Parma)</option>
+                      <option>44011-44120 (Ferrara)</option>
+                      <option>45010-45100 (Rovigo)</option>
+                      <option>46010-46100 (Mantova)</option>
+                      <option>47010-47920 (Forlì, Rimini)</option>
+                      <option>48011-48120 (Ravenna)</option>
+                      <option>50012-50100 (Firenze)</option>
+                      <option>51010-51100 (Pistoia)</option>
+                      <option>52010-52100 (Arezzo)</option>
+                      <option>53011-53100 (Siena)</option>
+                      <option>54010-54100 (Massa)</option>
+                      <option>55011-55100 (Lucca)</option>
+                      <option>56010-56120 (Pisa)</option>
+                      <option>57014-57100 (Livorno)</option>
+                      <option>58010-58100 (Grosseto)</option>
+                      <option>59013-59100 (Prato)</option>
+                      <option>60010-60100 (Ancona)</option>
+                      <option>61010-61120 (Pesaro)</option>
+                      <option>62010-62100 (Macerata)</option>
+                      <option>63061-63900 (Ascoli Piceno, Fermo)</option>
+                      <option>64010-64100 (Teramo)</option>
+                      <option>65010-65120 (Pescara)</option>
+                      <option>66010-66100 (Chieti)</option>
+                      <option>67010-67100 (L'Aquila)</option>
+                      <option>70010-70100 (Bari)</option>
+                      <option>71010-71120 (Foggia)</option>
+                      <option>72012-72100 (Brindisi)</option>
+                      <option>73010-73100 (Lecce)</option>
+                      <option>74010-74120 (Taranto)</option>
+                      <option>75010-75100 (Matera)</option>
+                      <option>76011-76125 (Andria, Barletta, Trani)</option>
+                      <option>80010-80100 (Napoli)</option>
+                      <option>81010-81100 (Caserta)</option>
+                      <option>82010-82100 (Benevento)</option>
+                      <option>83010-83100 (Avellino)</option>
+                      <option>84010-84100 (Salerno)</option>
+                      <option>85010-85100 (Potenza)</option>
+                      <option>86010-86170 (Campobasso, Isernia)</option>
+                      <option>87010-87100 (Cosenza)</option>
+                      <option>88020-88900 (Catanzaro, Crotone)</option>
+                      <option>89010-89900 (Reggio Calabria, Vibo Valentia)</option>
+                      <option>90010-90100 (Palermo)</option>
+                      <option>91010-91100 (Trapani)</option>
+                      <option>92010-92100 (Agrigento)</option>
+                      <option>93010-93100 (Caltanissetta)</option>
+                      <option>94010-94100 (Enna)</option>
+                      <option>95010-95100 (Catania)</option>
+                      <option>96010-96100 (Siracusa)</option>
+                      <option>97010-97100 (Ragusa)</option>
+                      <option>98020-98100 (Messina)</option>
+                    </select>
+                    </div>
+                    <br>
+
+                    <div class="col-6">
+                      <input type="text" class="form-control" placeholder="Inserisci Provincia..." required>
+                    </div> 
+                    
+                    </div>
+                    <br>
+                    <div class="form-outline mb-4">
+                      <input type="text" class="form-control" placeholder="Inserisci Indirizzo e n° civico" required>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">@</div>
+                        </div>
+                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username" required>
+                      </div>
+                    </div>
+
+                  <br> 
+                  <div class="row g-0">
+                    <div class="col-12">
+                      <input type="email" class="form-control" placeholder=" Inserisci la Mail..."[(ngModel)]="email" name="email" required>
+                    </div>
+                  </div>
+                  <br>
+
+              
+
+                    <div class="row">
+                      
+                      <div class="col-6">
+                        <input type="password" class="form-control" id="pass" placeholder="Password..." [(ngModel)]="pass" name="pass" required>
+
+
+                      </div>
+                      <div class="col-6">
+                        <input type="password" class="form-control" id="pass_2" placeholder="Conferma Password..." required>
+
+                      </div>
+                    </div>
+
+            
+
+                   <br>
+                    <div class="text-center pt-1 mb-5 pb-1">
+                     <button class="btn btn-danger btn-block fa-lg mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrati</button> 
+                    </div>
+                    <br>
+                    
+                  </form>
+  
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                  <h3 class="mb-4">Scopri la tua potenza con Dynami </h3>
+                  <h3 class="small mb-0">Cari atleti e appassionati dello sport,
+                    Siete pronti a raggiungere nuovi livelli di prestazioni e vivere la vostra passione per il fitness al massimo?
+                     Allora è tempo di scoprire Dynami, 
+                    il sito sportivo che offre tutto ciò di cui avete bisogno per ottenere il massimo dal vostro allenamento!</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Successo!
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Home"></button>
+        </div>
+        
+        <div class="modal-body">
+          <div class="thank-you-pop">
+            <img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">
+            <h1>Grazie!</h1>
+            <p>Accesso completato! Clicca il link su Gmail per confermare l'account!</p>
+            <h3 class="cupon-pop">Your Id: <span>12345</span></h3>
+            
+           </div>
+        </div>
+        <div class="modal-footer">
+          <a (click)="goToPage('dashboard')" class="btn btn-outline-secondary" data-bs-dismiss="modal">Home</a>
+          <a href="https://www.google.com/intl/it/gmail/about/" class="btn btn-outline-danger">Gmail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  

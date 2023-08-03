@@ -1,0 +1,22 @@
+.bg-red{
+    background-color: #b92733;
+}
+
+.text-dec {
+    color: #fff;
+    transition: color 0.5s;
+  }
+
+
+ .text-dec:hover{
+    color: #000000;
+	transform-origin: bottom left;
+  }
+
+  .product-grid .pic-1{
+    opacity:1;
+    transition:all .3s ease-out 0s
+}
+.product-grid:hover .pic-1{
+    opacity:1
+}

@@ -1,0 +1,1205 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Giuseppe",
+      "surname": "Rossi",
+      "address": {
+        "road": "Via Roma",
+        "number": 122,
+        "cap": 73100,
+        "city": "Lecce"
+      },
+      "email": "giuseppe.rossi@gmail.com",
+      "pass": "sfkdohdfouihae3431",
+      "phone": "3451231234",
+      "year_birth": "2000"
+    },
+    {
+      "id": 2,
+      "name": "John",
+      "surname": "Doe",
+      "address": {
+        "road": "Main Street",
+        "number": 456,
+        "cap": 12345,
+        "city": "New York"
+      },
+      "email": "john.doe@example.com",
+      "pass": "3sdfr93dflw9",
+      "phone": "5557891234",
+      "year_birth": "1985"
+    },
+    {
+      "id": 3,
+      "name": "Alice",
+      "surname": "Smith",
+      "address": {
+        "road": "Sunset Boulevard",
+        "number": 789,
+        "cap": 90210,
+        "city": "Los Angeles"
+      },
+      "email": "alice.smith@example.com",
+      "pass": "asvdfg3489sf",
+      "phone": "1234567890",
+      "year_birth": "1992"
+    },
+    {
+      "id": 4,
+      "name": "Maria",
+      "surname": "Gonzalez",
+      "address": {
+        "road": "Calle de la Rosa",
+        "number": 56,
+        "cap": 28001,
+        "city": "Madrid"
+      },
+      "email": "maria.gonzalez@example.com",
+      "pass": "pldfow94yh3",
+      "phone": "9876543210",
+      "year_birth": "1988"
+    },
+    {
+      "id": 5,
+      "name": "Robert",
+      "surname": "Kim",
+      "address": {
+        "road": "Sejong-daero",
+        "number": 100,
+        "cap": 34513,
+        "city": "Seoul"
+      },
+      "email": "robert.kim@example.com",
+      "pass": "aslkj45h35li",
+      "phone": "5555555555",
+      "year_birth": "1995"
+    },
+    {
+      "name": "",
+      "surname": "",
+      "email": "",
+      "pass": "",
+      "id_utente": "",
+      "id": 6
+    },
+    {
+      "name": "",
+      "surname": "",
+      "email": "",
+      "pass": "",
+      "id_utente": "",
+      "id": 7
+    },
+    {
+      "name": "pippo",
+      "surname": "asd",
+      "email": "jacopo@af.com",
+      "pass": "gchgd",
+      "id_utente": "",
+      "id": 8
+    },
+    {
+      "name": "vzd",
+      "surname": "sdf",
+      "email": "xzcvxg",
+      "pass": "sdf",
+      "id": 9
+    }
+  ],
+  "orders": [
+    {
+      "id_order": "1",
+      "data": "2022-03-12",
+      "n_products": "2",
+      "shipping_address": {
+        "road": "Via Roma",
+        "number": 122,
+        "cap": 73100,
+        "city": "Lecce"
+      }
+    },
+    {
+      "id_order": "2",
+      "data": "2022-05-18",
+      "n_products": "3",
+      "shipping_address": {
+        "road": "Main Street",
+        "number": 456,
+        "cap": 12345,
+        "city": "New York"
+      }
+    },
+    {
+      "id_order": "3",
+      "data": "2022-08-27",
+      "n_products": "1",
+      "shipping_address": {
+        "road": "Sunset Boulevard",
+        "number": 789,
+        "cap": 90210,
+        "city": "Los Angeles"
+      }
+    },
+    {
+      "id_order": "4",
+      "data": "2022-06-05",
+      "n_products": "4",
+      "shipping_address": {
+        "road": "Calle de la Rosa",
+        "number": 56,
+        "cap": 28001,
+        "city": "Madrid"
+      }
+    },
+    {
+      "id_order": "5",
+      "data": "2022-09-15",
+      "n_products": "2",
+      "shipping_address": {
+        "road": "Sejong-daero",
+        "number": 100,
+        "cap": 34513,
+        "city": "Seoul"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id_category": 1,
+      "name": "Abbigliamento",
+      "products": [
+        1,
+        2
+      ],
+      "subcategories": [
+        {
+          "id_subcategory": 1,
+          "name": "Uomo"
+        },
+        {
+          "id_subcategory": 2,
+          "name": "Donna"
+        }
+      ]
+    },
+    {
+      "id_category": 4,
+      "name": "Alimentazione",
+      "products": [
+        3,
+        4
+      ],
+      "subcategories": [
+        {
+          "id_subcategory": 3,
+          "name": "Pasti pronti"
+        },
+        {
+          "id_subcategory": 4,
+          "name": "Barrette proteiche"
+        }
+      ]
+    },
+    {
+      "id_category": 7,
+      "name": "Cura personale",
+      "products": [
+        5
+      ]
+    },
+    {
+      "id_category": 8,
+      "name": "Proteine",
+      "subcategory": "",
+      "products": [
+        6
+      ]
+    },
+    {
+      "id_category": 9,
+      "name": "Merch",
+      "products": [
+        7
+      ]
+    }
+  ],
+  "catalogo": [
+    {
+      "category": "Abbigliamento",
+      "product": [
+        {
+          "id_product": 1,
+          "quantity": 1,
+          "name": "Maglietta da Corsa DryTech",
+          "image1": "assets/images/prodotto16.1.png",
+          "image2": "assets/images/prodotto16.2.png",
+          "description": "Una maglietta da corsa leggera e traspirante, realizzata con tessuto DryTech ad asciugatura rapida. Ideale per le sessioni di allenamento e le competizioni, offre un comfort eccezionale e una perfetta libertà di movimento.",
+          "price": 24.99,
+          "category": "Uomo",
+          "persona1": "Marco R.",
+          "commento1": "Questa maglietta da corsa è semplicemente fantastica! La indosso durante le mie sessioni di allenamento e mi tiene fresco e asciutto. La consiglio a tutti gli appassionati di corsa!",
+          "persona2": "Giulia M.",
+          "commento2": "Ho acquistato questa maglietta da corsa per mio fratello e gli è piaciuta tantissimo! Il tessuto leggero è perfetto per le corse e la sua vestibilità è ideale. Davvero un ottimo prodotto!"
+        },
+        {
+          "id_product": 2,
+          "quantity": 1,
+          "name": "Scarpe da Running Leggere",
+          "image1": "assets/images/prodotto5.1.png",
+          "image2": "assets/images/prodotto5.2.png",
+          "description": "Scarpe da running leggere e versatili adatte per la corsa e l'attività sportiva. Realizzate con una tomaia traspirante e suole ammortizzate per un comfort ottimale.",
+          "price": 64.99,
+          "category": "uomo",
+          "persona1": "Francesca S.",
+          "commento1": "Queste scarpe da running sono fantastiche! Le ho usate per le mie corse quotidiane e mi hanno fornito il supporto e l'ammortizzazione di cui avevo bisogno. Sono anche molto leggere e comode da indossare. Consigliatissime!",
+          "persona2": "Luca G.",
+          "commento2": "Le scarpe da running leggere sono perfette per la mia routine di allenamento. Il design è molto accattivante e il comfort è eccezionale. Non potrei essere più soddisfatto del mio acquisto!"
+        },
+        {
+          "id_product": 3,
+          "quantity": 1,
+          "name": "Maglia da Allenamento a Maniche Corte",
+          "image1": "assets/images/prodotto6.1.png",
+          "image2": "assets/images/prodotto6.2.png",
+          "description": "Una maglia da allenamento leggera e traspirante con maniche corte. Realizzata con tessuto ad asciugatura rapida per mantenerti fresco durante l'attività sportiva.",
+          "price": 29.99,
+          "category": "uomo",
+          "persona1": "Chiara D.",
+          "commento1": "Questa maglia da allenamento è davvero comoda! La indosso durante le mie sessioni in palestra e mi tiene fresca anche quando sudi molto. È perfetta per gli allenamenti estivi!",
+          "persona2": "Alessio F.",
+          "commento2": "Sono davvero soddisfatto di questa maglia da allenamento! Le maniche corte mi consentono una maggiore libertà di movimento e il tessuto traspirante mi mantiene asciutto anche durante gli esercizi più intensi. La consiglio a tutti!"
+        },
+        {
+          "id_product": 4,
+          "quantity": 1,
+          "name": "Pantaloni Sportivi Compression",
+          "image1": "assets/images/prodotto7.1.png",
+          "image2": "assets/images/prodotto7.2.png",
+          "description": "Pantaloni sportivi a compressione per il massimo supporto muscolare e comfort. Realizzati con materiale elastico e traspirante per prestazioni ottimali.",
+          "price": 39.99,
+          "category": "uomo",
+          "persona1": "Roberto L.",
+          "commento1": "I pantaloni sportivi a compressione sono fantastici! Mi aiutano a sostenere i muscoli durante gli allenamenti intensi, e il tessuto elastico offre una vestibilità perfetta. Li adoro!",
+          "persona2": "Laura B.",
+          "commento2": "Ho acquistato questi pantaloni sportivi per mio marito e devo dire che ne è entusiasta! Gli forniscono il supporto di cui ha bisogno durante l'attività fisica e il tessuto traspirante lo mantiene asciutto. Ottima scelta!"
+        },
+        {
+          "id_product": 5,
+          "quantity": 1,
+          "name": "Tuta da Running Leggera",
+          "image1": "assets/images/prodotto8.1.png",
+          "image2": "assets/images/prodotto8.2.png",
+          "description": "Una tuta da running leggera e traspirante per prestazioni ottimali. Ideale per la corsa o altre attività sportive.",
+          "price": 69.99,
+          "category": "uomo",
+          "persona1": "Valentina P.",
+          "commento1": "Questa tuta da running è davvero fantastica! Mi piace come si adatta al mio corpo e mi dà la libertà di movimento di cui ho bisogno durante la corsa. È anche molto traspirante e comoda. Consigliata!",
+          "persona2": "Federico M.",
+          "commento2": "Sono rimasto piacevolmente sorpreso dalla qualità di questa tuta da running. È leggera, traspirante e si asciuga rapidamente, il che la rende perfetta per le mie corse mattutine. La consiglio a tutti gli amanti dello sport!"
+        },
+        {
+          "id_product": 6,
+          "quantity": 1,
+          "name": "Calze Sportive Antiumidità",
+          "image1": "assets/images/prodotto9.1.png",
+          "image2": "assets/images/prodotto9.2.png",
+          "description": "Calze sportive leggere ed antiumidità per mantenere i piedi asciutti e confortevoli durante l'attività fisica. Realizzate con materiale traspirante.",
+          "price": 12.99,
+          "category": "uomo",
+          "persona1": "Elena L.",
+          "commento1": "Queste calze sportive sono fantastiche! Mantengono i miei piedi asciutti anche durante le sessioni di allenamento più intense. Il materiale traspirante è davvero comodo. Le adoro!",
+          "persona2": "Antonio R.",
+          "commento2": "Ho acquistato queste calze sportive per il mio ragazzo e devo dire che sono un ottimo prodotto! Sono leggere e traspiranti, e lui le indossa sempre durante l'attività fisica. Consigliate!"
+        },
+        {
+          "id_product": 7,
+          "quantity": 1,
+          "name": "Gonna a Pieghe",
+          "image1": "assets/images/prodotto10.1.png",
+          "image2": "assets/images/prodotto10.2.png",
+          "description": "Una graziosa gonna a pieghe per uno stile femminile ed elegante. Realizzata in tessuto leggero e adatta per diverse occasioni.",
+          "price": 39.99,
+          "category": "donna",
+          "persona1": "Martina C.",
+          "commento1": "Questa gonna a pieghe è il capo perfetto per le mie occasioni speciali! L'ho indossata ad un evento formale e ho ricevuto tantissimi complimenti. È elegante e confortevole, mi piace tantissimo!",
+          "persona2": "Giovanni B.",
+          "commento2": "Ho regalato questa gonna a pieghe a mia moglie e le è piaciuta moltissimo! Il tessuto è leggero e la vestibilità è perfetta per lei. È una gonna versatile che può essere indossata in diverse occasioni. Consiglio l'acquisto!"
+        },
+        {
+          "id_product": 8,
+          "quantity": 1,
+          "name": "Sandali Estivi con Zeppa",
+          "image1": "assets/images/prodotto11.1.png",
+          "image2": "assets/images/prodotto11.2.png",
+          "description": "Sandali estivi con zeppa per un look chic e confortevole. Perfetti per le giornate estive e le serate in città.",
+          "price": 54.99,
+          "category": "donna",
+          "persona1": "Simone M.",
+          "commento1": "Questi sandali con zeppa sono fantastici! Sono comodi e mi permettono di stare in piedi per ore senza alcun disagio. Inoltre, il design è davvero elegante. Li adoro!",
+          "persona2": "Laura S.",
+          "commento2": "Ho acquistato questi sandali estivi per le mie vacanze e sono stata davvero soddisfatta! Sono comodi da indossare e si abbinano perfettamente ai miei outfit estivi. Li consiglio a tutte le donne!"
+        },
+        {
+          "id_product": 9,
+          "quantity": 1,
+          "name": "Abito a Tubino Elegante",
+          "image1": "assets/images/prodotto12.1.png",
+          "image2": "assets/images/prodotto12.2.png",
+          "description": "Un abito a tubino elegante e sofisticato per eventi speciali. Realizzato con tessuto elasticizzato per una vestibilità perfetta.",
+          "price": 69.99,
+          "category": "donna",
+          "persona1": "Fabio G.",
+          "commento1": "Ho acquistato questo abito a tubino per un matrimonio e mi sono sentita bellissima indossandolo! La vestibilità è perfetta e il tessuto elasticizzato lo rende molto confortevole. Consiglio vivamente questo abito per le occasioni speciali!",
+          "persona2": "Valeria P.",
+          "commento2": "Questo abito a tubino è davvero elegante e mi si adatta perfettamente! L'ho indossato per un evento di lavoro e ho ricevuto tantissimi complimenti. È un capo di alta qualità che non delude mai!"
+        },
+        {
+          "id_product": 10,
+          "quantity": 1,
+          "name": "Camicetta con Stampa Floreale",
+          "image1": "assets/images/prodotto13.1.png",
+          "image2": "assets/images/prodotto13.2.png",
+          "description": "Una camicetta leggera con delicata stampa floreale. Perfetta per abbinamenti casual o formali.",
+          "price": 29.99,
+          "category": "donna",
+          "persona1": "Alessandro L.",
+          "commento1": "Ho acquistato questa camicetta per la mia fidanzata e le sta benissimo! La stampa floreale è davvero carina e il tessuto leggero è ideale per la stagione estiva. Consiglio l'acquisto!",
+          "persona2": "Paola S.",
+          "commento2": "Questa camicetta con stampa floreale è il mio nuovo capo preferito! È leggera, comoda e il design è davvero carino. Posso indossarla sia in occasioni casual che formali. Sono davvero soddisfatta!"
+        },
+        {
+          "id_product": 11,
+          "quantity": 1,
+          "name": "Pantaloni Skinny in Denim",
+          "image1": "assets/images/prodotto14.1.png",
+          "image2": "assets/images/prodotto14.2.png",
+          "description": "Pantaloni skinny in denim per uno stile moderno e comodo. Ideali per creare outfit trendy.",
+          "price": 49.99,
+          "category": "uomo",
+          "persona1": "Silvia M.",
+          "commento1": "Ho acquistato questi pantaloni skinny per mio fratello e devo dire che gli stanno benissimo! Il taglio è moderno e la vestibilità è perfetta. Sono un ottimo acquisto!",
+          "persona2": "Gabriele R.",
+          "commento2": "I pantaloni skinny sono la mia scelta preferita quando voglio creare outfit alla moda. Questi pantaloni in denim sono fantastici e si adattano perfettamente al mio stile. Li indosso spesso!"
+        },
+        {
+          "id_product": 12,
+          "quantity": 1,
+          "name": "Abito Estivo a Fiori",
+          "image1": "assets/images/prodotto15.1.png",
+          "image2": "assets/images/prodotto15.2.png",
+          "description": "Un grazioso abito estivo con stampa a fiori per un look fresco e alla moda. Realizzato con tessuto leggero e confortevole per le giornate calde.",
+          "price": 49.99,
+          "category": "donna",
+          "persona1": "Simone D.",
+          "commento1": "Ho acquistato questo abito estivo per la mia ragazza e le sta benissimo! La stampa a fiori è perfetta per la stagione estiva e il tessuto leggero lo rende molto comodo da indossare. Ottimo acquisto!",
+          "persona2": "Chiara B.",
+          "commento2": "Questo abito estivo è davvero carino e femminile! La stampa a fiori è adorabile e la vestibilità è perfetta per me. È il capo ideale per le giornate calde dell'estate!"
+        },
+        {
+          "id_product": 13,
+          "quantity": 1,
+          "name": "M908 – T-SHIRT SQUADRA U.S.LECCE",
+          "image1": "assets/images/prodotto17.1.png",
+          "image2": "assets/images/prodotto17.2.png",
+          "description": "Una t-shirt leggera e alla moda della squadra U.S. Lecce con un design fresco e una stampa a fiori estiva. Realizzata con tessuto morbido e confortevole, ideale per affrontare le giornate calde.",
+          "price": 45,
+          "category": "uomo",
+          "persona1": "Marco G.",
+          "commento1": "Ho acquistato questa t-shirt della squadra U.S. Lecce e sono davvero soddisfatto del mio acquisto! La stampa a fiori la rende originale e perfetta per l'estate. Inoltre, il tessuto leggero la rende comoda da indossare durante le partite. Consigliata a tutti i tifosi!",
+          "persona2": "Giulia M.",
+          "commento2": "La t-shirt della squadra U.S. Lecce è fantastica! Adoro il design a fiori, è femminile e alla moda. La vestibilità è ottima e il tessuto è morbido sulla pelle. Sono pronta per sostenere la mia squadra del cuore con stile!"
+        }
+      ]
+    },
+    {
+      "category": "Alimentazione",
+      "product": [
+        {
+          "id_product": 1,
+          "quantity": 1,
+          "name": "Barretta Proteica Granade",
+          "image1": "assets/images/barretta1.1.png",
+          "image2": "assets/images/barretta1.2.png",
+          "description": "Una deliziosa barretta proteica Granade, perfetta come spuntino post-allenamento o per placare la voglia di dolce. Con il suo sapore irresistibile, è un'ottima fonte di proteine e nutrimento per il tuo corpo.",
+          "price": 2.49,
+          "category": "Barrette proteiche",
+          "persona1": "Elena R.",
+          "commento1": "Ho provato questa barretta proteica e devo dire che è davvero deliziosa! Il sapore è ottimo e mi aiuta a placare la voglia di dolce senza sensi di colpa. La consiglio a chiunque cerchi uno spuntino nutriente e gustoso.",
+          "persona2": "Fabio G.",
+          "commento2": "Questa barretta proteica è perfetta per i miei spuntini dopo l'allenamento. Ha un ottimo gusto e mi aiuta a recuperare le energie dopo l'attività fisica. La consiglio a tutti gli sportivi."
+        },
+        {
+          "id_product": 2,
+          "quantity": 1,
+          "name": "Barretta Proteica al Cioccolato",
+          "image1": "assets/images/barretta2.1.png",
+          "image2": "assets/images/barretta2.2.jpg",
+          "description": "Una deliziosa barretta proteica al cioccolato, perfetta come spuntino post-allenamento o per placare la voglia di dolce. Con il suo sapore intenso, ti offre una piacevole esperienza di gusto e un nutrimento completo.",
+          "price": 2.99,
+          "category": "Barrette proteiche",
+          "persona1": "Laura M.",
+          "commento1": "Adoro questa barretta proteica al cioccolato! È il mio snack preferito dopo l'allenamento, ha un gusto delizioso e mi aiuta a soddisfare la voglia di dolce senza appesantirmi. La ricomprerò sicuramente!",
+          "persona2": "Marco G.",
+          "commento2": "Ho provato questa barretta proteica e sono rimasto soddisfatto. Il cioccolato è davvero gustoso e mi aiuta a raggiungere il giusto apporto di proteine durante la giornata. La consiglio a chiunque cerchi uno spuntino sano e goloso."
+        },
+        {
+          "id_product": 3,
+          "quantity": 1,
+          "name": "Barretta Proteica alla Vaniglia",
+          "image1": "assets/images/barretta3.1.png",
+          "image2": "assets/images/barretta3.2.png",
+          "description": "Una gustosa barretta proteica alla vaniglia, ideale per integrare proteine nella tua dieta quotidiana. Con il suo sapore delicato e raffinato, è perfetta per uno spuntino leggero e nutriente.",
+          "price": 2.49,
+          "category": "Barrette proteiche",
+          "persona1": "Silvia M.",
+          "commento1": "Questa barretta proteica alla vaniglia è davvero deliziosa! Il sapore è fresco e piacevole, perfetto per una pausa gustosa e nutriente. La ricomprerò sicuramente!",
+          "persona2": "Giacomo L.",
+          "commento2": "Ho provato questa barretta proteica e devo dire che è davvero buona! La vaniglia è un classico intramontabile e questa barretta non delude le aspettative. Ottimo prodotto!"
+        },
+        {
+          "id_product": 4,
+          "quantity": 1,
+          "name": "Barretta Proteica al Cocco",
+          "image1": "assets/images/barretta4.1.png",
+          "image2": "assets/images/barretta4.2.png",
+          "description": "Una barretta proteica al cocco, perfetta per uno spuntino nutriente e saporito. Con il suo delizioso sapore esotico, ti offre un momento di piacere e un apporto di proteine essenziali.",
+          "price": 2.79,
+          "category": "Barrette proteiche",
+          "persona1": "Martina C.",
+          "commento1": "Questa barretta proteica al cocco è davvero una delizia! Il cocco è il mio gusto preferito e questa barretta è la scelta perfetta per uno spuntino nutriente e gustoso. La consiglio a tutti gli amanti del cocco!",
+          "persona2": "Giovanni B.",
+          "commento2": "Ho provato questa barretta proteica e sono rimasto molto soddisfatto. Il gusto del cocco è piacevole e il prodotto è di alta qualità. La consiglio a chiunque cerchi uno spuntino sano e gustoso."
+        },
+        {
+          "id_product": 5,
+          "quantity": 1,
+          "name": "Barretta Proteica alle Noci",
+          "image1": "assets/images/barretta5.1.png",
+          "image2": "assets/images/barretta5.2.png",
+          "description": "Una barretta proteica con aggiunta di noci, ottima per chi ama il gusto e i benefici delle noci. Con il suo mix irresistibile tra proteine e frutta secca, è un'ottima scelta per uno spuntino nutriente e gustoso.",
+          "price": 3.29,
+          "category": "Barrette proteiche",
+          "persona1": "Valentina M.",
+          "commento1": "Questa barretta proteica alle noci è deliziosa! Il mix tra le noci e le proteine è perfetto per uno spuntino nutriente e saporito. La ricomprerò sicuramente!",
+          "persona2": "Simone D.",
+          "commento2": "Ho provato questa barretta proteica e devo dire che mi piace molto! Le noci aggiungono una piacevole croccantezza e il sapore è davvero buono. Consiglio l'acquisto!"
+        },
+        {
+          "id_product": 6,
+          "quantity": 1,
+          "name": "Barretta Proteica alla Fragola",
+          "image1": "assets/images/barretta6.1.png",
+          "image2": "assets/images/barretta6.2.png",
+          "description": "Una deliziosa barretta proteica alla fragola, dal sapore fresco e fruttato. Con il suo gusto irresistibile, ti offre un momento di piacere e un apporto di proteine essenziali.",
+          "price": 2.69,
+          "category": "Barrette proteiche",
+          "persona1": "Chiara B.",
+          "commento1": "Adoro questa barretta proteica alla fragola! Il sapore è fresco e fruttato, perfetto per uno spuntino dopo l'allenamento. La consiglio a tutti gli amanti della fragola.",
+          "persona2": "Paolo S.",
+          "commento2": "Ho provato questa barretta proteica e mi è piaciuta molto! La fragola è il mio gusto preferito e questa barretta non delude le aspettative. Ottimo prodotto!"
+        },
+        {
+          "id_product": 7,
+          "quantity": 1,
+          "name": "Pasta ai Funghi",
+          "image1": "assets/images/pasto1.1.png",
+          "image2": "assets/images/pasto1.2.png",
+          "description": "Un piatto di pasta ai funghi con una deliziosa crema di porcini e champignon, condita con pregiato olio extravergine d'oliva e prezzemolo fresco. Un piatto ricco di sapore e di nutrimento.",
+          "price": 9.99,
+          "category": "Pasti Pronti",
+          "persona1": "Alessandro L.",
+          "commento1": "Ho provato questa pasta ai funghi e devo dire che è davvero deliziosa! La crema di porcini e champignon è gustosa e il prezzemolo fresco aggiunge una piacevole nota di freschezza. La consiglio a tutti gli amanti dei funghi!",
+          "persona2": "Laura S.",
+          "commento2": "Questa pasta ai funghi è un piatto ricco di sapore! La crema di porcini e champignon è davvero gustosa e si abbina perfettamente alla pasta. La consiglio a tutti gli amanti dei funghi!"
+        },
+        {
+          "id_product": 8,
+          "quantity": 1,
+          "name": "Risotto ai Funghi",
+          "image1": "assets/images/pasto2.1.png",
+          "image2": "assets/images/pasto2.2.png",
+          "description": "Un cremoso risotto ai funghi porcini, preparato con ingredienti di alta qualità e un tocco di prelibatezza. Un piatto gustoso e raffinato per i veri amanti dei funghi.",
+          "price": 7.49,
+          "category": "Pasti Pronti",
+          "persona1": "Simona R.",
+          "commento1": "Questo risotto ai funghi è semplicemente delizioso! Il gusto dei funghi porcini è intenso e la consistenza cremosa è perfetta. Lo adoro!",
+          "persona2": "Luca G.",
+          "commento2": "Ho provato questo risotto ai funghi e sono rimasto molto soddisfatto. Il sapore è autentico e si sente la qualità degli ingredienti. Lo consiglio a tutti gli amanti dei funghi!"
+        },
+        {
+          "id_product": 9,
+          "quantity": 1,
+          "name": "Petto di pollo Mac&Cheese",
+          "image1": "assets/images/pasto3.1.png",
+          "image2": "assets/images/pasto3.2.png",
+          "description": "Un gustoso petto di pollo al formaggio Mac&Cheese, con una ricca e cremosa salsa al cheddar e gomiti di pasta cotti al dente. Un comfort food irresistibile per i veri buongustai.",
+          "price": 8.99,
+          "category": "Pasti Pronti",
+          "persona1": "Gianluca M.",
+          "commento1": "Ho provato questo petto di pollo Mac&Cheese e devo dire che è una vera bontà! Il pollo è tenero e il formaggio cheddar lo rende irresistibilmente cremoso. Da provare assolutamente!",
+          "persona2": "Erika S.",
+          "commento2": "Questo piatto di petto di pollo Mac&Cheese è davvero gustoso e appagante. La combinazione di pollo e formaggio è fantastica. Consiglio questo pasto a tutti gli amanti dei sapori comfort food."
+        },
+        {
+          "id_product": 10,
+          "quantity": 1,
+          "name": "Pollo con senape al miele e riso",
+          "image1": "assets/images/pasto4.1.png",
+          "image2": "assets/images/pasto4.2.png",
+          "description": "Un piatto delizioso di pollo con senape al miele, servito con riso basmati aromatico e verdure croccanti. Un mix perfetto di dolce e salato per una vera esperienza culinaria.",
+          "price": 10.99,
+          "category": "Pasti Pronti",
+          "persona1": "Marco B.",
+          "commento1": "Ho provato questo piatto di pollo con senape al miele e devo dire che è una scoperta culinaria! Il gusto è sorprendente e il pollo è succoso. Mi è piaciuto molto!",
+          "persona2": "Federica L.",
+          "commento2": "Questo piatto di pollo con senape al miele è un'esplosione di sapori! La dolcezza del miele si abbina perfettamente alla senape e il pollo è morbido e saporito. Da provare!"
+        },
+        {
+          "id_product": 11,
+          "quantity": 1,
+          "name": "Pasta al Pesto Genovese",
+          "image1": "assets/images/pasto5.1.png",
+          "image2": "assets/images/pasto5.2.png",
+          "description": "Una classica pasta al pesto genovese, preparata con basilico fresco, pinoli e parmigiano grattugiato. Un piatto semplice e genuino per gli amanti della cucina italiana.",
+          "price": 7.99,
+          "category": "Pasti Pronti",
+          "persona1": "Stefania G.",
+          "commento1": "Questa pasta al pesto genovese è davvero buona! Il pesto è fatto con ingredienti freschi e si sente il sapore autentico del basilico. La consiglio a tutti gli amanti della cucina italiana.",
+          "persona2": "Antonio C.",
+          "commento2": "Ho provato questa pasta al pesto genovese e mi è piaciuta molto! Il sapore è genuino e mi ha fatto ricordare l'Italia. Ottimo piatto per un pranzo veloce ma gustoso."
+        },
+        {
+          "id_product": 12,
+          "quantity": 1,
+          "name": "Salmone e quinoa Diet",
+          "image1": "assets/images/pasto6.1.png",
+          "image2": "assets/images/pasto6.2.png",
+          "description": "Un piatto raffinato di salmone affumicato accompagnato da asparagi croccanti e salsa olandese. Una scelta salutare e sofisticata per chi segue uno stile di vita sano.",
+          "price": 10.49,
+          "category": "Pasti Pronti",
+          "persona1": "Anna P.",
+          "commento1": "Questo piatto di salmone e quinoa è una vera prelibatezza! Il salmone è delicato e si abbina perfettamente alla quinoa. La salsa olandese aggiunge una nota di eleganza. Da provare!",
+          "persona2": "Luigi M.",
+          "commento2": "Ho provato questo piatto di salmone e quinoa e devo dire che è un piacere per il palato. È sano ma non rinuncia al gusto. Lo consiglio a chi cerca una scelta salutare ma sofisticata."
+        }
+      ]
+    },
+    {
+      "category": "Cura personale",
+      "product": [
+        {
+          "id_product": 1,
+          "quantity": 1,
+          "name": "Schiuma da Barba per Uomo",
+          "image1": "assets/images/cura1.1.png",
+          "image2": "assets/images/cura1.2.png",
+          "description": "Una schiuma da barba di alta qualità per gli uomini che amano curarsi. Questa schiuma morbida e cremosa facilita la rasatura senza irritare la pelle, lasciando un profumo fresco e piacevole.",
+          "price": 14.99,
+          "category": "Cura personale",
+          "persona1": "Marco R.",
+          "commento1": "Questa schiuma da barba è fantastica! Ha un profumo molto gradevole e rende la rasatura un'esperienza piacevole. La mia pelle non è mai stata così liscia e priva di irritazioni. Consigliatissima!",
+          "persona2": "Giovanni L.",
+          "commento2": "Ho provato diverse schiume da barba, ma questa è la migliore. È facile da applicare, non irrita la pelle e lascia una sensazione di freschezza dopo la rasatura. Non potrei chiedere di più."
+        },
+        {
+          "id_product": 2,
+          "quantity": 1,
+          "name": "Profumo da uomo",
+          "image1": "assets/images/cura2.1.png",
+          "image2": "assets/images/cura2.2.png",
+          "description": "Un profumo maschile che incanta i sensi. Le note di agrumi, legno e spezie si fondono armoniosamente per creare una fragranza sofisticata e duratura.",
+          "price": 45.75,
+          "category": "Cura personale",
+          "persona1": "Simona M.",
+          "commento1": "Questo profumo è semplicemente affascinante! Lo ho acquistato per il mio fidanzato, e ogni volta che lo indossa, mi colpisce l'aroma intrigante. È elegante e maschile.",
+          "persona2": "Antonio S.",
+          "commento2": "Il profumo è una componente essenziale del mio stile. Questo profumo da uomo ha una fragranza raffinata e duratura che non passa inosservata. Ricevo sempre complimenti quando lo indosso."
+        },
+        {
+          "id_product": 3,
+          "quantity": 1,
+          "name": "Kit di Cura della Barba",
+          "image1": "assets/images/cura3.1.png",
+          "image2": "assets/images/cura3.2.png",
+          "description": "Un kit completo per la cura della barba, composto da olio per la barba, balsamo e pettine in legno. Questi prodotti di alta qualità aiutano a mantenere la barba morbida, disciplinata e profumata.",
+          "price": 29.99,
+          "category": "Cura personale",
+          "persona1": "Alessio G.",
+          "commento1": "Ho acquistato questo kit per la cura della barba ed è fantastico! L'olio per la barba lascia la mia barba morbida e setosa, mentre il balsamo la tiene in ordine tutto il giorno. Il pettine in legno è un tocco di classe!",
+          "persona2": "Francesco D.",
+          "commento2": "Sono rimasto impressionato da questo kit per la cura della barba. La fragranza dell'olio è piacevolissima e i prodotti rendono la mia barba più gestibile e lucida. Consigliato per ogni barbuto!"
+        },
+        {
+          "id_product": 4,
+          "quantity": 1,
+          "name": "Tavolozza di Ombretti",
+          "image1": "assets/images/cura4.1.png",
+          "image2": "assets/images/cura4.2.png",
+          "description": "Una tavolozza di ombretti con una varietà di colori adatti per creare look sia naturali che audaci. Le texture setose e altamente pigmentate garantiscono una facile applicazione e una lunga durata.",
+          "price": 35.5,
+          "category": "Cura personale",
+          "persona1": "Chiara F.",
+          "commento1": "Questa tavolozza di ombretti è meravigliosa! Gli ombretti si sfumano alla perfezione e hanno una durata straordinaria. Posso creare infinite combinazioni di look con queste tonalità. Super consigliata!",
+          "persona2": "Federica L.",
+          "commento2": "Amo questa tavolozza di ombretti! La uso tutti i giorni per il mio trucco e non posso fare a meno di essa. Le tonalità sono bellissime, e la qualità è eccezionale. Non potrei chiedere di più."
+        },
+        {
+          "id_product": 5,
+          "quantity": 1,
+          "name": "Bilancia Digitale",
+          "image1": "assets/images/cura5.1.png",
+          "image2": "assets/images/cura5.2.png",
+          "description": "Una bilancia digitale dal design moderno e sottile, ideale per il controllo del peso corporeo. Dotata di schermo LCD retroilluminato e funzione di auto-accensione, è facile da usare e accurata.",
+          "price": 18.95,
+          "category": "Cura personale",
+          "persona1": "Elena B.",
+          "commento1": "Questa bilancia digitale è semplicemente perfetta! Il design è elegante e si adatta bene al mio bagno. È facile da leggere e fornisce misurazioni precise. Mi ha aiutato a monitorare il mio progresso nella perdita di peso.",
+          "persona2": "Davide R.",
+          "commento2": "Una bilancia affidabile e precisa. L'ho confrontata con altre bilance e i risultati sono sempre consistenti. Il display retroilluminato è utile, soprattutto di notte. Ottimo acquisto!"
+        },
+        {
+          "id_product": 6,
+          "quantity": 1,
+          "name": "Set di Pennelli da Trucco",
+          "image1": "assets/images/cura6.1.png",
+          "image2": "assets/images/cura6.2.png",
+          "description": "Un set di pennelli da trucco di alta qualità con diverse forme e dimensioni per applicare fondotinta, ombretto, blush e altro. Realizzati con setole morbide e resistenti, offrono un'applicazione precisa e omogenea.",
+          "price": 22.99,
+          "category": "Cura personale",
+          "persona1": "Martina S.",
+          "commento1": "Questo set di pennelli è eccezionale! Le setole sono incredibilmente morbide e applicano il trucco senza problemi. Sono soddisfatta della varietà di pennelli presenti nel set. Ne vale assolutamente la pena!",
+          "persona2": "Sara G.",
+          "commento2": "Ho acquistato questi pennelli da trucco su consiglio di una mia amica, e devo dire che sono felicissima del mio acquisto. La qualità è superiore, e la precisione nell'applicazione del trucco è notevole. Consigliatissimi!"
+        },
+        {
+          "id_product": 7,
+          "quantity": 1,
+          "name": "Massaggiatore per il collo",
+          "image1": "assets/images/cura7.1.png",
+          "image2": "assets/images/cura7.2.png",
+          "description": "Massaggiatore per il collo e le spalle con tecnologia avanzata per rilassare e alleviare la tensione muscolare. Dotato di diverse modalità di massaggio e calore opzionale per un'esperienza di benessere completa.",
+          "price": 89.99,
+          "category": "Cura personale",
+          "persona1": "Giovanna S.",
+          "commento1": "Questo massaggiatore è una vera salvezza! Le lunghe giornate al computer mi causano spesso tensioni al collo, ma questo dispositivo è incredibile nel rilassare i muscoli e ridurre lo stress. Mi sento rigenerata ogni volta che lo uso!",
+          "persona2": "Paolo R.",
+          "commento2": "Consiglio vivamente questo massaggiatore a chiunque abbia problemi di tensione muscolare. Le diverse modalità di massaggio sono molto rilassanti, e il calore aggiuntivo rende l'esperienza ancora più piacevole. Non posso più farne a meno!"
+        },
+        {
+          "id_product": 8,
+          "quantity": 1,
+          "name": "Gel Doccia Rinfrescante",
+          "image1": "assets/images/cura8.1.png",
+          "image2": "assets/images/cura8.2.png",
+          "description": "Un gel doccia rinfrescante con una fragranza vivace e rivitalizzante. La sua formula delicata deterge la pelle senza seccarla, lasciandola morbida e profumata.",
+          "price": 12.75,
+          "category": "Cura personale",
+          "persona1": "Alessandra C.",
+          "commento1": "Questo gel doccia ha un profumo meraviglioso! Mi sento subito rinata dopo una doccia con questo prodotto. La mia pelle è più morbida e l'aroma persiste a lungo. Lo adoro!",
+          "persona2": "Roberto T.",
+          "commento2": "Ho trovato finalmente un gel doccia che non irrita la mia pelle sensibile. La fragranza è fresca e piacevole, e la pelle rimane idratata. Non potrei chiedere di più da un prodotto per la doccia."
+        }
+      ]
+    },
+    {
+      "category": "Proteine",
+      "product": [
+        {
+          "id_product": 1,
+          "quantity": 1,
+          "name": "ProteinPlus - Integratore Proteico in Polvere",
+          "image1": "assets/images/proteine1.1.png",
+          "image2": "assets/images/proteine1.2.png",
+          "description": "ProteinPlus è un integratore proteico in polvere di alta qualità, ricco di proteine del siero del latte e caseina micellare. Questa combinazione di proteine offre un rilascio sostenuto di aminoacidi e supporta la crescita muscolare e il recupero dopo l'allenamento.",
+          "price": 79.99,
+          "category": "proteine",
+          "persona1": "Alessandra C.",
+          "commento1": "Questo integratore è fantastico! Lo uso da qualche settimana e i risultati sono sorprendenti. Il gusto è delizioso e si scioglie facilmente in acqua o latte. Le mie prestazioni sportive si sono notevolmente migliorate, e il recupero è più rapido. Consigliato!",
+          "persona2": "Luca M.",
+          "commento2": "ProteinPlus è il miglior integratore proteico che abbia mai provato. Il sapore è piacevole e la miscelabilità è ottima. Lo utilizzo dopo l'allenamento per favorire la rigenerazione muscolare, e funziona davvero bene. Lo consiglio a chiunque cerchi una proteina di qualità."
+        },
+        {
+          "id_product": 2,
+          "quantity": 1,
+          "name": "AminoMax - Aminoacidi Essenziali",
+          "image1": "assets/images/proteine2.1.png",
+          "image2": "assets/images/proteine2.2.png",
+          "description": "AminoMax è una potente miscela di aminoacidi essenziali in polvere, formulata per fornire un supporto completo al recupero muscolare e al mantenimento della massa magra. Ideale per atleti e bodybuilder che desiderano ottimizzare le prestazioni e accelerare la riparazione dei tessuti muscolari.",
+          "price": 59.99,
+          "category": "proteine",
+          "persona1": "Marco G.",
+          "commento1": "Gli AminoMax sono un must per chiunque pratichi attività fisica intensa. Aiutano notevolmente la riparazione dei muscoli dopo l'allenamento e migliorano la mia resistenza. Non riesco più a fare a meno di loro!",
+          "persona2": "Sara R.",
+          "commento2": "Ho provato diversi integratori di aminoacidi, ma AminoMax è il mio preferito. La formula è ben bilanciata, e i risultati sono visibili. Le mie prestazioni in palestra sono migliorate, e mi sento meno affaticata dopo gli allenamenti. Ottimo prodotto!"
+        },
+        {
+          "id_product": 3,
+          "quantity": 1,
+          "name": "PlantPower - Proteine Vegane",
+          "image1": "assets/images/proteine3.1.png",
+          "image2": "assets/images/proteine3.2.png",
+          "description": "PlantPower è un mix di proteine vegane a base di piselli, riso e semi di canapa. Questo integratore offre una fonte completa di aminoacidi essenziali e supporta la crescita muscolare per gli atleti vegani e coloro che preferiscono proteine vegetali.",
+          "price": 49.99,
+          "category": "proteine",
+          "persona1": "Chiara M.",
+          "commento1": "Come vegana, trovare un'ottima fonte di proteine è sempre stata una sfida. PlantPower è stato una piacevole scoperta. Il gusto è gradevole e il mix di proteine funziona bene per il mio fabbisogno. Mi sento più energica e i miei muscoli si stanno sviluppando bene.",
+          "persona2": "Luigi S.",
+          "commento2": "Ho scelto PlantPower per le sue proteine vegetali di alta qualità. È facile da digerire e il sapore è piacevole. Lo uso prima e dopo l'allenamento, e mi aiuta a mantenere la massa muscolare durante il taglio calorico. Consiglio a chiunque cerchi una fonte di proteine vegetali."
+        },
+        {
+          "id_product": 4,
+          "quantity": 1,
+          "name": "WheyPower - Proteine al Cioccolato",
+          "image1": "assets/images/proteine4.1.png",
+          "image2": "assets/images/proteine4.2.png",
+          "description": "WheyPower è una proteina del siero del latte di alta qualità con delizioso gusto al cioccolato, ideale per favorire la crescita muscolare e il recupero dopo l'allenamento. Con un profilo completo di aminoacidi, questa polvere è perfetta per chi desidera ottenere risultati ottimali dalla propria routine di allenamento.",
+          "price": 69.99,
+          "category": "proteine",
+          "persona1": "Stefano P.",
+          "commento1": "WheyPower al cioccolato è la mia scelta preferita di proteine del siero del latte. Ha un gusto delizioso e si mescola facilmente. Dopo averla utilizzata, ho notato un aumento della mia massa muscolare e una maggiore definizione. Consigliata a tutti gli appassionati di fitness!",
+          "persona2": "Laura B.",
+          "commento2": "Le proteine del siero del latte al cioccolato sono fondamentali per il mio recupero muscolare, e WheyPower è una delle migliori che abbia provato. Non solo ha un sapore fantastico, ma i risultati sono tangibili. Le mie prestazioni in palestra sono notevolmente migliorate da quando ho iniziato a utilizzarla."
+        },
+        {
+          "id_product": 5,
+          "quantity": 1,
+          "name": "BCAA Blast - Integratore di BCAA",
+          "image1": "assets/images/proteine5.1.png",
+          "image2": "assets/images/proteine5.2.png",
+          "description": "BCAA Blast è un potente integratore di BCAA (aminoacidi a catena ramificata) per favorire la sintesi proteica e ridurre il catabolismo muscolare. Ideale per atleti che desiderano mantenere la massa muscolare e migliorare le prestazioni durante l'allenamento.",
+          "price": 39.99,
+          "category": "proteine",
+          "persona1": "Martina L.",
+          "commento1": "BCAA Blast è un must per gli atleti seri. Lo uso durante e dopo gli allenamenti intensi, e mi aiuta a ridurre il dolore muscolare e la fatica. Il gusto è piacevole e si mescola bene. Ne ho provati diversi, ma questo è il mio preferito.",
+          "persona2": "Andrea M.",
+          "commento2": "Da quando ho aggiunto BCAA Blast alla mia routine, ho notato un'accelerazione nel recupero muscolare e una maggiore resistenza durante l'allenamento. È perfetto per aiutarmi a raggiungere i miei obiettivi fitness. Lo consiglio a chiunque voglia migliorare le proprie prestazioni sportive."
+        },
+        {
+          "id_product": 6,
+          "quantity": 1,
+          "name": "CaseinMax - Proteine della Caseina Micellare",
+          "image1": "assets/images/proteine6.1.png",
+          "image2": "assets/images/proteine6.2.png",
+          "description": "CaseinMax è un integratore di proteine della caseina micellare a rilascio lento, ideale per mantenere un flusso costante di aminoacidi durante la notte o periodi di digiuno prolungato. Questa polvere aiuta a proteggere i muscoli e promuove il recupero a lungo termine.",
+          "price": 54.99,
+          "category": "proteine",
+          "persona1": "Francesca R.",
+          "commento1": "CaseinMax è un salvavita per me! Lo utilizzo prima di dormire per proteggere i muscoli durante la notte. Ha un sapore delizioso e mi aiuta a ridurre il catabolismo. Non posso più fare a meno di questo prodotto.",
+          "persona2": "Giovanni B.",
+          "commento2": "Le proteine della caseina micellare sono essenziali per il mio piano di recupero. CaseinMax ha una consistenza piacevole e un ottimo sapore. La miscelabilità è eccellente. Lo uso come spuntino proteico durante il giorno per mantenere costante l'apporto di aminoacidi."
+        },
+        {
+          "id_product": 7,
+          "quantity": 1,
+          "name": "HydroWhey - Proteine del Siero del Latte Idrolizzate",
+          "image1": "assets/images/proteine7.1.png",
+          "image2": "assets/images/proteine7.2.png",
+          "description": "HydroWhey è una forma avanzata di proteine del siero del latte idrolizzate, caratterizzate da una rapida velocità di assorbimento. Questo integratore è ideale per la fase post-allenamento, poiché offre una rapida fornitura di aminoacidi per il recupero muscolare.",
+          "price": 89.99,
+          "category": "proteine",
+          "persona1": "Giacomo D.",
+          "commento1": "HydroWhey è una proteina eccezionale! Si mescola istantaneamente e ha un gusto incredibile. Le mie performance sono migliorate e mi sento meno affaticato dopo gli allenamenti. È un po' costosa, ma ne vale la pena.",
+          "persona2": "Roberta S.",
+          "commento2": "Ho provato diverse proteine del siero del latte, ma HydroWhey si distingue davvero. La sua rapida velocità di assorbimento è perfetta per il recupero dopo l'allenamento. Il gusto è delizioso e si scioglie senza grumi. Consigliata!"
+        },
+        {
+          "id_product": 8,
+          "quantity": 1,
+          "name": "CreatineX - Creatina Micronizzata in Polvere",
+          "image1": "assets/images/proteine8.1.png",
+          "image2": "assets/images/proteine8.2.png",
+          "description": "CreatineX è una creatina micronizzata in polvere di alta qualità, nota per migliorare la forza e le prestazioni fisiche durante l'allenamento ad alta intensità. Questa creatina è perfetta per atleti e bodybuilder che vogliono massimizzare i loro risultati.",
+          "price": 29.99,
+          "category": "proteine",
+          "persona1": "Elena M.",
+          "commento1": "CreatineX ha migliorato notevolmente la mia forza e resistenza in palestra. La miscelabilità è ottima, e non ha sapore, quindi posso aggiungerla facilmente alle mie bevande preferite. La uso da diversi mesi e sono soddisfatta dei risultati.",
+          "persona2": "Federico L.",
+          "commento2": "La creatina è un must per me, e CreatineX è una delle migliori che abbia provato. La quantità di prodotto è abbondante, e il rapporto qualità-prezzo è ottimo. Mi ha aiutato a superare i miei plateau di allenamento e a raggiungere nuovi livelli di forza."
+        }
+      ]
+    },
+    {
+      "category": "Merch",
+      "product": [
+        {
+          "id_product": 1,
+          "name": "ALIMENTO",
+          "image1": "assets/images/prodotto1.1.png",
+          "image2": "assets/images/prodotto1.2.png",
+          "description": "Un bellissimo e elegante abito midi adatto per occasioni speciali. Realizzato con tessuto satinato di alta qualità con una silhouette a trapezio lusinghiera e dettagli delicati in pizzo.",
+          "price": 79.99,
+          "category": "donna"
+        },
+        {
+          "id_product": 2,
+          "name": "Scarpe da Running Leggere",
+          "image1": "assets/images/prodotto5.1.png",
+          "image2": "assets/images/prodotto5.2.png",
+          "description": "Scarpe da running leggere e versatili adatte per la corsa e l'attività sportiva. Realizzate con una tomaia traspirante e suole ammortizzate per un comfort ottimale.",
+          "price": 64.99,
+          "category": "uomo"
+        }
+      ]
+    },
+    {
+      "category": "Uomo",
+      "product": [
+        {
+          "id_product": 1,
+          "quantity": 1,
+          "name": "Maglietta da Corsa DryTech",
+          "image1": "assets/images/prodotto16.1.png",
+          "image2": "assets/images/prodotto16.2.png",
+          "description": "Una maglietta da corsa leggera e traspirante, realizzata con tessuto DryTech ad asciugatura rapida. Ideale per le sessioni di allenamento e le competizioni, offre un comfort eccezionale e una perfetta libertà di movimento.",
+          "price": 24.99,
+          "category": "Uomo",
+          "persona1": "Marco R.",
+          "commento1": "Questa maglietta da corsa è semplicemente fantastica! La indosso durante le mie sessioni di allenamento e mi tiene fresco e asciutto. La consiglio a tutti gli appassionati di corsa!",
+          "persona2": "Giulia M.",
+          "commento2": "Ho acquistato questa maglietta da corsa per mio fratello e gli è piaciuta tantissimo! Il tessuto leggero è perfetto per le corse e la sua vestibilità è ideale. Davvero un ottimo prodotto!"
+        },
+        {
+          "id_product": 2,
+          "quantity": 1,
+          "name": "Scarpe da Running Leggere",
+          "image1": "assets/images/prodotto5.1.png",
+          "image2": "assets/images/prodotto5.2.png",
+          "description": "Scarpe da running leggere e versatili adatte per la corsa e l'attività sportiva. Realizzate con una tomaia traspirante e suole ammortizzate per un comfort ottimale.",
+          "price": 64.99,
+          "category": "uomo",
+          "persona1": "Francesca S.",
+          "commento1": "Queste scarpe da running sono fantastiche! Le ho usate per le mie corse quotidiane e mi hanno fornito il supporto e l'ammortizzazione di cui avevo bisogno. Sono anche molto leggere e comode da indossare. Consigliatissime!",
+          "persona2": "Luca G.",
+          "commento2": "Le scarpe da running leggere sono perfette per la mia routine di allenamento. Il design è molto accattivante e il comfort è eccezionale. Non potrei essere più soddisfatto del mio acquisto!"
+        },
+        {
+          "id_product": 3,
+          "quantity": 1,
+          "name": "Maglia da Allenamento a Maniche Corte",
+          "image1": "assets/images/prodotto6.1.png",
+          "image2": "assets/images/prodotto6.2.png",
+          "description": "Una maglia da allenamento leggera e traspirante con maniche corte. Realizzata con tessuto ad asciugatura rapida per mantenerti fresco durante l'attività sportiva.",
+          "price": 29.99,
+          "category": "uomo",
+          "persona1": "Chiara D.",
+          "commento1": "Questa maglia da allenamento è davvero comoda! La indosso durante le mie sessioni in palestra e mi tiene fresca anche quando sudi molto. È perfetta per gli allenamenti estivi!",
+          "persona2": "Alessio F.",
+          "commento2": "Sono davvero soddisfatto di questa maglia da allenamento! Le maniche corte mi consentono una maggiore libertà di movimento e il tessuto traspirante mi mantiene asciutto anche durante gli esercizi più intensi. La consiglio a tutti!"
+        },
+        {
+          "id_product": 4,
+          "quantity": 1,
+          "name": "Pantaloni Sportivi Compression",
+          "image1": "assets/images/prodotto7.1.png",
+          "image2": "assets/images/prodotto7.2.png",
+          "description": "Pantaloni sportivi a compressione per il massimo supporto muscolare e comfort. Realizzati con materiale elastico e traspirante per prestazioni ottimali.",
+          "price": 39.99,
+          "category": "uomo",
+          "persona1": "Roberto L.",
+          "commento1": "I pantaloni sportivi a compressione sono fantastici! Mi aiutano a sostenere i muscoli durante gli allenamenti intensi, e il tessuto elastico offre una vestibilità perfetta. Li adoro!",
+          "persona2": "Laura B.",
+          "commento2": "Ho acquistato questi pantaloni sportivi per mio marito e devo dire che ne è entusiasta! Gli forniscono il supporto di cui ha bisogno durante l'attività fisica e il tessuto traspirante lo mantiene asciutto. Ottima scelta!"
+        },
+        {
+          "id_product": 5,
+          "quantity": 1,
+          "name": "Tuta da Running Leggera",
+          "image1": "assets/images/prodotto8.1.png",
+          "image2": "assets/images/prodotto8.2.png",
+          "description": "Una tuta da running leggera e traspirante per prestazioni ottimali. Ideale per la corsa o altre attività sportive.",
+          "price": 69.99,
+          "category": "uomo",
+          "persona1": "Valentina P.",
+          "commento1": "Questa tuta da running è davvero fantastica! Mi piace come si adatta al mio corpo e mi dà la libertà di movimento di cui ho bisogno durante la corsa. È anche molto traspirante e comoda. Consigliata!",
+          "persona2": "Federico M.",
+          "commento2": "Sono rimasto piacevolmente sorpreso dalla qualità di questa tuta da running. È leggera, traspirante e si asciuga rapidamente, il che la rende perfetta per le mie corse mattutine. La consiglio a tutti gli amanti dello sport!"
+        },
+        {
+          "id_product": 6,
+          "quantity": 1,
+          "name": "Calze Sportive Antiumidità",
+          "image1": "assets/images/prodotto9.1.png",
+          "image2": "assets/images/prodotto9.2.png",
+          "description": "Calze sportive leggere ed antiumidità per mantenere i piedi asciutti e confortevoli durante l'attività fisica. Realizzate con materiale traspirante.",
+          "price": 12.99,
+          "category": "uomo",
+          "persona1": "Elena L.",
+          "commento1": "Queste calze sportive sono fantastiche! Mantengono i miei piedi asciutti anche durante le sessioni di allenamento più intense. Il materiale traspirante è davvero comodo. Le adoro!",
+          "persona2": "Antonio R.",
+          "commento2": "Ho acquistato queste calze sportive per il mio ragazzo e devo dire che sono un ottimo prodotto! Sono leggere e traspiranti, e lui le indossa sempre durante l'attività fisica. Consigliate!"
+        },
+        {
+          "id_product": 11,
+          "quantity": 1,
+          "name": "Pantaloni Skinny in Denim",
+          "image1": "assets/images/prodotto14.1.png",
+          "image2": "assets/images/prodotto14.2.png",
+          "description": "Pantaloni skinny in denim per uno stile moderno e comodo. Ideali per creare outfit trendy.",
+          "price": 49.99,
+          "category": "uomo",
+          "persona1": "Silvia M.",
+          "commento1": "Ho acquistato questi pantaloni skinny per mio fratello e devo dire che gli stanno benissimo! Il taglio è moderno e la vestibilità è perfetta. Sono un ottimo acquisto!",
+          "persona2": "Gabriele R.",
+          "commento2": "I pantaloni skinny sono la mia scelta preferita quando voglio creare outfit alla moda. Questi pantaloni in denim sono fantastici e si adattano perfettamente al mio stile. Li indosso spesso!"
+        }
+      ]
+    },
+    {
+      "category": "Donna",
+      "product": [
+        {
+          "id_product": 7,
+          "quantity": 1,
+          "name": "Gonna a Pieghe",
+          "image1": "assets/images/prodotto10.1.png",
+          "image2": "assets/images/prodotto10.2.png",
+          "description": "Una graziosa gonna a pieghe per uno stile femminile ed elegante. Realizzata in tessuto leggero e adatta per diverse occasioni.",
+          "price": 39.99,
+          "category": "donna",
+          "persona1": "Martina C.",
+          "commento1": "Questa gonna a pieghe è il capo perfetto per le mie occasioni speciali! L'ho indossata ad un evento formale e ho ricevuto tantissimi complimenti. È elegante e confortevole, mi piace tantissimo!",
+          "persona2": "Giovanni B.",
+          "commento2": "Ho regalato questa gonna a pieghe a mia moglie e le è piaciuta moltissimo! Il tessuto è leggero e la vestibilità è perfetta per lei. È una gonna versatile che può essere indossata in diverse occasioni. Consiglio l'acquisto!"
+        },
+        {
+          "id_product": 8,
+          "quantity": 1,
+          "name": "Sandali Estivi con Zeppa",
+          "image1": "assets/images/prodotto11.1.png",
+          "image2": "assets/images/prodotto11.2.png",
+          "description": "Sandali estivi con zeppa per un look chic e confortevole. Perfetti per le giornate estive e le serate in città.",
+          "price": 54.99,
+          "category": "donna",
+          "persona1": "Simone M.",
+          "commento1": "Questi sandali con zeppa sono fantastici! Sono comodi e mi permettono di stare in piedi per ore senza alcun disagio. Inoltre, il design è davvero elegante. Li adoro!",
+          "persona2": "Laura S.",
+          "commento2": "Ho acquistato questi sandali estivi per le mie vacanze e sono stata davvero soddisfatta! Sono comodi da indossare e si abbinano perfettamente ai miei outfit estivi. Li consiglio a tutte le donne!"
+        },
+        {
+          "id_product": 9,
+          "quantity": 1,
+          "name": "Abito a Tubino Elegante",
+          "image1": "assets/images/prodotto12.1.png",
+          "image2": "assets/images/prodotto12.2.png",
+          "description": "Un abito a tubino elegante e sofisticato per eventi speciali. Realizzato con tessuto elasticizzato per una vestibilità perfetta.",
+          "price": 69.99,
+          "category": "donna",
+          "persona1": "Fabio G.",
+          "commento1": "Ho acquistato questo abito a tubino per un matrimonio e mi sono sentita bellissima indossandolo! La vestibilità è perfetta e il tessuto elasticizzato lo rende molto confortevole. Consiglio vivamente questo abito per le occasioni speciali!",
+          "persona2": "Valeria P.",
+          "commento2": "Questo abito a tubino è davvero elegante e mi si adatta perfettamente! L'ho indossato per un evento di lavoro e ho ricevuto tantissimi complimenti. È un capo di alta qualità che non delude mai!"
+        },
+        {
+          "id_product": 10,
+          "quantity": 1,
+          "name": "Camicetta con Stampa Floreale",
+          "image1": "assets/images/prodotto13.1.png",
+          "image2": "assets/images/prodotto13.2.png",
+          "description": "Una camicetta leggera con delicata stampa floreale. Perfetta per abbinamenti casual o formali.",
+          "price": 29.99,
+          "category": "donna",
+          "persona1": "Alessandro L.",
+          "commento1": "Ho acquistato questa camicetta per la mia fidanzata e le sta benissimo! La stampa floreale è davvero carina e il tessuto leggero è ideale per la stagione estiva. Consiglio l'acquisto!",
+          "persona2": "Paola S.",
+          "commento2": "Questa camicetta con stampa floreale è il mio nuovo capo preferito! È leggera, comoda e il design è davvero carino. Posso indossarla sia in occasioni casual che formali. Sono davvero soddisfatta!"
+        },
+        {
+          "id_product": 12,
+          "quantity": 1,
+          "name": "Abito Estivo a Fiori",
+          "image1": "assets/images/prodotto15.1.png",
+          "image2": "assets/images/prodotto15.2.png",
+          "description": "Un grazioso abito estivo con stampa a fiori per un look fresco e alla moda. Realizzato con tessuto leggero e confortevole per le giornate calde.",
+          "price": 49.99,
+          "category": "donna",
+          "persona1": "Simone D.",
+          "commento1": "Ho acquistato questo abito estivo per la mia ragazza e le sta benissimo! La stampa a fiori è perfetta per la stagione estiva e il tessuto leggero lo rende molto comodo da indossare. Ottimo acquisto!",
+          "persona2": "Chiara B.",
+          "commento2": "Questo abito estivo è davvero carino e femminile! La stampa a fiori è adorabile e la vestibilità è perfetta per me. È il capo ideale per le giornate calde dell'estate!"
+        }
+      ]
+    },
+    {
+      "category": "Pasti pronti",
+      "product": [
+        {
+          "id_product": 7,
+          "quantity": 1,
+          "name": "Pasta ai Funghi",
+          "image1": "assets/images/pasto1.1.png",
+          "image2": "assets/images/pasto1.2.png",
+          "description": "Un piatto di pasta ai funghi con una deliziosa crema di porcini e champignon, condita con pregiato olio extravergine d'oliva e prezzemolo fresco. Un piatto ricco di sapore e di nutrimento.",
+          "price": 9.99,
+          "category": "Pasti Pronti",
+          "persona1": "Alessandro L.",
+          "commento1": "Ho provato questa pasta ai funghi e devo dire che è davvero deliziosa! La crema di porcini e champignon è gustosa e il prezzemolo fresco aggiunge una piacevole nota di freschezza. La consiglio a tutti gli amanti dei funghi!",
+          "persona2": "Laura S.",
+          "commento2": "Questa pasta ai funghi è un piatto ricco di sapore! La crema di porcini e champignon è davvero gustosa e si abbina perfettamente alla pasta. La consiglio a tutti gli amanti dei funghi!"
+        },
+        {
+          "id_product": 8,
+          "quantity": 1,
+          "name": "Risotto ai Funghi",
+          "image1": "assets/images/pasto2.1.png",
+          "image2": "assets/images/pasto2.2.png",
+          "description": "Un cremoso risotto ai funghi porcini, preparato con ingredienti di alta qualità e un tocco di prelibatezza. Un piatto gustoso e raffinato per i veri amanti dei funghi.",
+          "price": 7.49,
+          "category": "Pasti Pronti",
+          "persona1": "Simona R.",
+          "commento1": "Questo risotto ai funghi è semplicemente delizioso! Il gusto dei funghi porcini è intenso e la consistenza cremosa è perfetta. Lo adoro!",
+          "persona2": "Luca G.",
+          "commento2": "Ho provato questo risotto ai funghi e sono rimasto molto soddisfatto. Il sapore è autentico e si sente la qualità degli ingredienti. Lo consiglio a tutti gli amanti dei funghi!"
+        },
+        {
+          "id_product": 9,
+          "quantity": 1,
+          "name": "Petto di pollo Mac&Cheese",
+          "image1": "assets/images/pasto3.1.png",
+          "image2": "assets/images/pasto3.2.png",
+          "description": "Un gustoso petto di pollo al formaggio Mac&Cheese, con una ricca e cremosa salsa al cheddar e gomiti di pasta cotti al dente. Un comfort food irresistibile per i veri buongustai.",
+          "price": 8.99,
+          "category": "Pasti Pronti",
+          "persona1": "Gianluca M.",
+          "commento1": "Ho provato questo petto di pollo Mac&Cheese e devo dire che è una vera bontà! Il pollo è tenero e il formaggio cheddar lo rende irresistibilmente cremoso. Da provare assolutamente!",
+          "persona2": "Erika S.",
+          "commento2": "Questo piatto di petto di pollo Mac&Cheese è davvero gustoso e appagante. La combinazione di pollo e formaggio è fantastica. Consiglio questo pasto a tutti gli amanti dei sapori comfort food."
+        },
+        {
+          "id_product": 10,
+          "quantity": 1,
+          "name": "Pollo con senape al miele e riso",
+          "image1": "assets/images/pasto4.1.png",
+          "image2": "assets/images/pasto4.2.png",
+          "description": "Un piatto delizioso di pollo con senape al miele, servito con riso basmati aromatico e verdure croccanti. Un mix perfetto di dolce e salato per una vera esperienza culinaria.",
+          "price": 10.99,
+          "category": "Pasti Pronti",
+          "persona1": "Marco B.",
+          "commento1": "Ho provato questo piatto di pollo con senape al miele e devo dire che è una scoperta culinaria! Il gusto è sorprendente e il pollo è succoso. Mi è piaciuto molto!",
+          "persona2": "Federica L.",
+          "commento2": "Questo piatto di pollo con senape al miele è un'esplosione di sapori! La dolcezza del miele si abbina perfettamente alla senape e il pollo è morbido e saporito. Da provare!"
+        },
+        {
+          "id_product": 11,
+          "quantity": 1,
+          "name": "Pasta al Pesto Genovese",
+          "image1": "assets/images/pasto5.1.png",
+          "image2": "assets/images/pasto5.2.png",
+          "description": "Una classica pasta al pesto genovese, preparata con basilico fresco, pinoli e parmigiano grattugiato. Un piatto semplice e genuino per gli amanti della cucina italiana.",
+          "price": 7.99,
+          "category": "Pasti Pronti",
+          "persona1": "Stefania G.",
+          "commento1": "Questa pasta al pesto genovese è davvero buona! Il pesto è fatto con ingredienti freschi e si sente il sapore autentico del basilico. La consiglio a tutti gli amanti della cucina italiana.",
+          "persona2": "Antonio C.",
+          "commento2": "Ho provato questa pasta al pesto genovese e mi è piaciuta molto! Il sapore è genuino e mi ha fatto ricordare l'Italia. Ottimo piatto per un pranzo veloce ma gustoso."
+        },
+        {
+          "id_product": 12,
+          "quantity": 1,
+          "name": "Salmone e quinoa Diet",
+          "image1": "assets/images/pasto6.1.png",
+          "image2": "assets/images/pasto6.2.png",
+          "description": "Un piatto raffinato di salmone affumicato accompagnato da asparagi croccanti e salsa olandese. Una scelta salutare e sofisticata per chi segue uno stile di vita sano.",
+          "price": 10.49,
+          "category": "Pasti Pronti",
+          "persona1": "Anna P.",
+          "commento1": "Questo piatto di salmone e quinoa è una vera prelibatezza! Il salmone è delicato e si abbina perfettamente alla quinoa. La salsa olandese aggiunge una nota di eleganza. Da provare!",
+          "persona2": "Luigi M.",
+          "commento2": "Ho provato questo piatto di salmone e quinoa e devo dire che è un piacere per il palato. È sano ma non rinuncia al gusto. Lo consiglio a chi cerca una scelta salutare ma sofisticata."
+        }
+      ]
+    },
+    {
+      "category": "Barrette proteiche",
+      "product": [
+        {
+          "id_product": 1,
+          "quantity": 1,
+          "name": "Barretta Proteica Granade",
+          "image1": "assets/images/barretta1.1.png",
+          "image2": "assets/images/barretta1.2.png",
+          "description": "Una deliziosa barretta proteica Granade, perfetta come spuntino post-allenamento o per placare la voglia di dolce. Con il suo sapore irresistibile, è un'ottima fonte di proteine e nutrimento per il tuo corpo.",
+          "price": 79.99,
+          "category": "Barrette proteiche",
+          "persona1": "Elena R.",
+          "commento1": "Ho provato questa barretta proteica e devo dire che è davvero deliziosa! Il sapore è ottimo e mi aiuta a placare la voglia di dolce senza sensi di colpa. La consiglio a chiunque cerchi uno spuntino nutriente e gustoso.",
+          "persona2": "Fabio G.",
+          "commento2": "Questa barretta proteica è perfetta per i miei spuntini dopo l'allenamento. Ha un ottimo gusto e mi aiuta a recuperare le energie dopo l'attività fisica. La consiglio a tutti gli sportivi."
+        },
+        {
+          "id_product": 2,
+          "quantity": 1,
+          "name": "Barretta Proteica al Cioccolato",
+          "image1": "assets/images/barretta2.1.png",
+          "image2": "assets/images/barretta2.2.jpg",
+          "description": "Una deliziosa barretta proteica al cioccolato, perfetta come spuntino post-allenamento o per placare la voglia di dolce. Con il suo sapore intenso, ti offre una piacevole esperienza di gusto e un nutrimento completo.",
+          "price": 2.99,
+          "category": "Barrette proteiche",
+          "persona1": "Laura M.",
+          "commento1": "Adoro questa barretta proteica al cioccolato! È il mio snack preferito dopo l'allenamento, ha un gusto delizioso e mi aiuta a soddisfare la voglia di dolce senza appesantirmi. La ricomprerò sicuramente!",
+          "persona2": "Marco G.",
+          "commento2": "Ho provato questa barretta proteica e sono rimasto soddisfatto. Il cioccolato è davvero gustoso e mi aiuta a raggiungere il giusto apporto di proteine durante la giornata. La consiglio a chiunque cerchi uno spuntino sano e goloso."
+        },
+        {
+          "id_product": 3,
+          "quantity": 1,
+          "name": "Barretta Proteica alla Vaniglia",
+          "image1": "assets/images/barretta3.1.png",
+          "image2": "assets/images/barretta3.2.png",
+          "description": "Una gustosa barretta proteica alla vaniglia, ideale per integrare proteine nella tua dieta quotidiana. Con il suo sapore delicato e raffinato, è perfetta per uno spuntino leggero e nutriente.",
+          "price": 2.49,
+          "category": "Barrette proteiche",
+          "persona1": "Silvia M.",
+          "commento1": "Questa barretta proteica alla vaniglia è davvero deliziosa! Il sapore è fresco e piacevole, perfetto per una pausa gustosa e nutriente. La ricomprerò sicuramente!",
+          "persona2": "Giacomo L.",
+          "commento2": "Ho provato questa barretta proteica e devo dire che è davvero buona! La vaniglia è un classico intramontabile e questa barretta non delude le aspettative. Ottimo prodotto!"
+        },
+        {
+          "id_product": 4,
+          "quantity": 1,
+          "name": "Barretta Proteica al Cocco",
+          "image1": "assets/images/barretta4.1.png",
+          "image2": "assets/images/barretta4.2.png",
+          "description": "Una barretta proteica al cocco, perfetta per uno spuntino nutriente e saporito. Con il suo delizioso sapore esotico, ti offre un momento di piacere e un apporto di proteine essenziali.",
+          "price": 2.79,
+          "category": "Barrette proteiche",
+          "persona1": "Martina C.",
+          "commento1": "Questa barretta proteica al cocco è davvero una delizia! Il cocco è il mio gusto preferito e questa barretta è la scelta perfetta per uno spuntino nutriente e gustoso. La consiglio a tutti gli amanti del cocco!",
+          "persona2": "Giovanni B.",
+          "commento2": "Ho provato questa barretta proteica e sono rimasto molto soddisfatto. Il gusto del cocco è piacevole e il prodotto è di alta qualità. La consiglio a chiunque cerchi uno spuntino sano e gustoso."
+        },
+        {
+          "id_product": 5,
+          "quantity": 1,
+          "name": "Barretta Proteica alle Noci",
+          "image1": "assets/images/barretta5.1.png",
+          "image2": "assets/images/barretta5.2.png",
+          "description": "Una barretta proteica con aggiunta di noci, ottima per chi ama il gusto e i benefici delle noci. Con il suo mix irresistibile tra proteine e frutta secca, è un'ottima scelta per uno spuntino nutriente e gustoso.",
+          "price": 3.29,
+          "category": "Barrette proteiche",
+          "persona1": "Valentina M.",
+          "commento1": "Questa barretta proteica alle noci è deliziosa! Il mix tra le noci e le proteine è perfetto per uno spuntino nutriente e saporito. La ricomprerò sicuramente!",
+          "persona2": "Simone D.",
+          "commento2": "Ho provato questa barretta proteica e devo dire che mi piace molto! Le noci aggiungono una piacevole croccantezza e il sapore è davvero buono. Consiglio l'acquisto!"
+        },
+        {
+          "id_product": 6,
+          "quantity": 1,
+          "name": "Barretta Proteica alla Fragola",
+          "image1": "assets/images/barretta6.1.png",
+          "image2": "assets/images/barretta6.2.png",
+          "description": "Una deliziosa barretta proteica alla fragola, dal sapore fresco e fruttato. Con il suo gusto irresistibile, ti offre un momento di piacere e un apporto di proteine essenziali.",
+          "price": 2.69,
+          "category": "Barrette proteiche",
+          "persona1": "Chiara B.",
+          "commento1": "Adoro questa barretta proteica alla fragola! Il sapore è fresco e fruttato, perfetto per uno spuntino dopo l'allenamento. La consiglio a tutti gli amanti della fragola.",
+          "persona2": "Paolo S.",
+          "commento2": "Ho provato questa barretta proteica e mi è piaciuta molto! La fragola è il mio gusto preferito e questa barretta non delude le aspettative. Ottimo prodotto!"
+        }
+      ]
+    }
+  ],
+  "login": {
+    "token": "aiwLI5jtyg/3kan1Bd7G7dA9zQ?7wb8o4zWB?yD14y9FCNX0V5klZueQGV-EYzSmcPGE6lVWw=451LJljGc-0t5B58dJlbrjvuNB8DML483QkPH0d1=xyHmSn6!8=M3/w55Yp?VHLh11cx05J837yMXLsLSgo9D8H4MaZEr-BK1?ELKo242a7-a7lRmyCR4YjbaMKFnXw1S096k3uV5YkBsVdMVzGUFTVrEVRkP-0pjN?mszTylaO?yqHKnq7Vz5"
+  }
+}

@@ -1,0 +1,79 @@
+<!-- Mio singolo prodotto -->
+<!-- se viene cliccato quel determinato prodotto, visualizza le sue specifiche -->
+<ng-container *ngIf="selectedProduct">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-5">
+                                <img [src]="selectedProduct.image1" class="w-100" alt="">
+                                <hr class="text-red-logo">
+                                <h4>{{selectedProduct.name}}</h4>
+                                <br>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="text-danger">{{selectedProduct.price}}€</p>
+                                    </div>
+                                    <div class="col-4">
+                                    </div>
+                                </div>
+                            </div>
+                      
+                            <div class="col-7">
+                                <h3 class="txt-red">Descrizione</h3>
+                                <p>{{selectedProduct.description}}</p>
+                                <hr class="text-red-logo">
+                                <h3 class="txt-red">Commenti sul prodotto</h3>
+                                <br>
+                                <div class="row">
+                                    <!-- <div class="col-1">
+                                        <img src="assets/images/user.png" class="w-100" alt="Foto profilo">
+                                    </div> -->
+                                    <div class="col-4">
+                                        <h4>
+                                            {{selectedProduct.persona1}}
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p> {{selectedProduct.commento1}}</p>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <!-- <div class="col-1">
+                                        <img src="assets/images/user.png" class="w-100" alt="Foto profilo">
+                                    </div> -->
+                                    <div class="col-4">
+                                        <h4>
+                                            {{selectedProduct.persona2}}
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>{{selectedProduct.commento2}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <h4 >Aggiungi il prodotto</h4>
+                            <div class="row">
+                                <div class="col-10">
+                                    <!-- al click di Aggiungi al carrello, esegui la funzione "addToCart del prodotto visualizzato" -->
+                                    <button class="btn btn-red-logo" type="button" (click)="addToCart(selectedProduct)">Aggiungi al carrello</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
